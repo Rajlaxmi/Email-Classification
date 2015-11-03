@@ -28,7 +28,7 @@ for i in range(1, 100):
 
 text_clf = Pipeline([('vect', CountVectorizer()),
                      ('tfidf', TfidfTransformer()),
-                     ('clf', SGDClassifier(loss='hinge', penalty='l2',
+                     ('clf', SGDClassifier(loss='hinge', penalty='l2', #Can change to Naive Bayes, SVM here
                      alpha=1e-3, n_iter=5, random_state=42)),
                      ])
 
